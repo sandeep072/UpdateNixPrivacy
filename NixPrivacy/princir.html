@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.boot strapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top navbar-default">
+  <a class="navbar-brand" href="#" style="color: white">Controllers Processors</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+<div class="container-fluid">
+  <div class="row ">
+<div class="vertical-menu">
+ <div class="dropdown">
+    <button class="btn btn-md" type="button" data-toggle="dropdown">Self Assessment
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="control.html">Controller Processor</a></li>
+      <li><a href="principle.html">Principles Alignment</a></li>
+      <li><a href="details.html">Detailed Assessment</a></li>
+    </ul>
+    </div>
+    <div class="dropdown">
+    <button class="btn" type="button" data-toggle="dropdown">GDPR Internal Audit
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Plan Audit</a></li>
+      <li><a href="#">Review Audit</a></li>
+      <li><a href="#">Report</a></li>
+      <li><a href="#">Action Plan</a></li>
+    </ul>
+</div> 
+  <div class="dropdown">
+    <button class="btn" type="button" data-toggle="dropdown">Data Mapping
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="">Type of data</a></li>
+      <li><a href="#">Mapping</a></li>
+    </ul>
+</div> 
+</div>
+  <div class="container bg-light">
+  <!-- <div class="row"> -->
+  <div class="col-md-10">
+     <h2>GDPR Principles</h2>
+</div>
+ <div class="col-md-10 ">
+<div class="panel panel-default">
+ <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+
+  
+
+</div>
+</div>
+<!-- </div> -->
+
+</div>
+</div>
+
+</body>
+</html>
+<script>
+window.onload = function() {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  animationEnabled: true,
+  title: {
+    text: "You are 40% aligned with GDPR Principles"
+  },
+  data: [{
+    type: "pie",
+    startAngle: 240,
+    yValueFormatString: "##0.00\"%\"",
+    indexLabel: "{label} {y}",
+    dataPoints: [
+      {y: 79.45, label: "Google"},
+      {y: 7.31, label: "Bing"},
+      {y: 7.0, label: "Baidu"},
+      {y: 40.0, label: "GDPR"},
+      {y: 1.26, label: "Others"}
+    ]
+  }]
+});
+chart.render();
+
+}
+</script>
