@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Controller CheckList</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<p id="s">Hello</p>
+<button type="button" class="btn btn-primary" id="hide" >Hide</button>
+<button type="button" class="btn btn-primary" id="show">show</button>
+Or:
+<button>show and hide</button>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#hide").click(function(){
+          $("#s").hide();
+		});
+			$("#show").click(function(){
+          $("#s").show();
+		});
+			
+		
+	});
+	$("button").click(function(){
+          $("#s").toggle();
+		});
+</script>
+
+</body>
+</html>

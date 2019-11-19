@@ -1,0 +1,194 @@
+<?php
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+     <meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.boot strapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top navbar-default">
+  <a href="dashboard.php"><img src="nix.png" alt="nix" style="width: 45px;height: 45px;"></a>
+  <a class="navbar-brand" href="#" style="color: white">Details </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
+
+
+    <div class="col-md-12 bg-light">
+      <h3></h3>
+<table class="table table-bordered ">
+  <thead style="background-color: #563D7C;color: white">
+    <tr class="Do" class="">
+      <th scope="col">Data Owner</th>
+      <th scope="col">Process Involved</th> 
+      <th scope="col">Nature of Data</th>
+      <th scope="col">Type of Data</th>
+      <th scope="col">Data Subject</th>
+      <th scope="col">Location in system</th>
+      <th scope="col">Source of Data</th> 
+      <th scope="col">Data Purpose and usages</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="DD">
+      <td>HR</td>
+      <td>Recruitment</td>
+      <td>
+       <input type="text" name="name" id="name1" class="form-control" placeholder="eg :- Application data,Control data etc..">
+      </td>
+      <td> <p>personal Data: </p><br>
+        <p>Speical Category Data:</b></td>
+       <td><input type="text" name="name" id="name1" class="form-control" placeholder="eg :- Job Applicant,sales prospect etc.."></td>
+      <td>  
+           <input type="text" name="name" id="name1" class="form-control" placeholder="eg :- Github,CRM,ERP etc..">
+         </td>
+       <td>
+         <input type="text" name="name" id="name1" class="form-control" placeholder="eg :- Google Job Application form etc..">
+
+       </td>
+      <td><div class="form-group">         
+            <select class="form-control" id="example" onchange='CheckColors(this.value);'>
+              <option>Fill Purpose</option>
+              <option>Not Sure</option> 
+              <option>Not Purpose</option>          
+            </select>
+        </div>
+        <input type="text" class="form-control" id="color">
+        </td>
+        <script type="text/javascript">
+function CheckColors(val){
+ var element=document.getElementById('color');
+ if(val=='pick a color'||val=='Fill Purpose')
+   element.style.display='block';
+ else  
+   element.style.display='none';
+}
+
+</script> 
+
+
+  <!--       
+      <td><div class="form-group">
+            <select class="form-control" id="exampleSelectd" onclick="fun()">
+              <option>UK</option>
+              <option>Ireland</option>        
+          </select>
+        </div>
+      </td>
+     <td>  
+       <div class="form-group">
+            <select class="form-control" id="exampleSelectd">
+              <option>Spain</option>
+              <option>UK</option>        
+            </select>
+        </div>
+     </td>
+      <td></td>
+       <td>
+
+      <div id="app-cover">
+  <div class="row">
+    <div class="toggle-button-cover">
+      <div class="button-cover">
+        <div class="button r" id="button-1">
+          <input type="checkbox" class="checkbox">
+          <div class="knobs"></div>
+          <div class="layer"></div>
+        </div>
+      </div>
+    </div>
+</div>
+       </td>
+      <td>
+       NILL
+      </td>
+       <td></td>
+      <td></td>     --> 
+    </tr>
+    <tr style="background-color: #563D7C;color: white">
+      
+       <th scope="col">Data Storage location</th>
+      <th scope="col">Data Access Location</th>
+      <th scope="col">Access Control</th>
+      <th scope="col">Privacy Policy</th> 
+      <th scope="col">3rd Party data Process</th>
+      <th scope="col">Data Transfer to Locations</th>
+      <th scope="col">Data Retention</th> 
+      <th scope="col"></th> 
+    </tr>
+    <tr>
+      
+       <td>
+      <input type="text" name="name" id="name1" class="form-control" placeholder="eg :- Server Location  etc..">
+      </td>
+     <td>  
+            <input type="text" name="name" id="name1" class="form-control" placeholder="eg :-   etc..">
+     </td>
+      <td>   
+               <input type="text" name="name" id="name1" class="form-control" placeholder="eg :- Enter names destination of people who have access  etc..">
+    </td>
+       <td>
+          <div class="form-group">
+        <div class="row">
+        <div class="col-md-12">
+            <select class="form-control" id="exampleSelectd">
+              <option></option>
+              <option>Policy Exists</option> 
+               <option>No Policy</option>              
+            </select>
+    </div>
+        </div>
+        </div>
+       </td>
+      <td>
+              <input type="text" name="name" id="name1" class="form-control" placeholder="eg :- Nixpanel (or) Other transfer who process your data  etc..">
+
+      </td>
+       <td>    
+               <input type="text" name="name" id="name1" class="form-control" placeholder="eg :- ...to us ect..   etc..">
+      </td>
+      <td>          
+        <input type="text" name="name" id="name1" class="form-control" placeholder="eg :-12 months,3 months..   etc..">
+</td>  
+<td></td>
+    </tr>
+  </tbody>
+
+</table>
+
+</div>
+<center><button type="button" class="btn btn-success" onclick="location.href='Data_Owner.html'">Submit</button></center>
+</body>
+</html>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+   $('.Do').click(function(){
+        $('.DD').toggle();
+   });
+
+  })
+</script>

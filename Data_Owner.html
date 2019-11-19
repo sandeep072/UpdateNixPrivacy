@@ -1,0 +1,629 @@
+<?php
+
+?>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DPO</title>
+     <meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0"> 
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.boot strapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #F9F9FC">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-default">
+  <a href="dashboard.php"><img src="nix.png" alt="nix" style="width: 45px;height: 45px;"></a>
+		<a href="" class="navbar-brand">Nix Privacy</a>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="row">
+             <div class="col-md-2 bg-white">
+              <p>  <button class="btn" type="button"  id="a">Purpose And Usages</button></p>
+                  <p><button class="btn" type="button" id="b">Data-Retention</button>   </p>
+                 <p>  <button class="btn btn-md" type="button" id="c">Data Access Control</button></p>
+                  <p><button class="btn" type="button"  id="d">Privacy Policy</button>   </p>
+                   <p><button class="btn btn-md" type="button" id="e">Consent Management</button></p>
+            </div>
+            <script type="text/javascript">
+            	$(document).ready(function(){
+            		$('#t2').hide();
+                $('#t3').hide();
+                 $('#t4').hide();
+            		$('#a').click(function(){
+                           $('#a').css('background-color','#E8E9EC');
+                           $('#b').css('background-color','white');
+                           $('#c').css('background-color','white');
+                           $('#d').css('background-color','white');
+                           $('#e').css('background-color','white');
+                           $('#t1').show();
+                           $('#t2').hide();
+                            $('#t3').hide();
+                             $('#t4').hide();
+            		});
+            		$('#b').click(function(){
+                           $('#b').css('background-color','#E8E9EC');
+                             $('#a').css('background-color','white');
+                               $('#c').css('background-color','white');
+                                $('#d').css('background-color','white');
+                           $('#e').css('background-color','white');
+                           $('#t1').hide();
+                           $('#t2').show();
+                            $('#t3').hide();
+                             $('#t4').hide();
+            		});
+            			$('#c').click(function(){	
+                           $('#c').css('background-color','#E8E9EC');
+                           $('#b').css('background-color','white');
+                           $('#a').css('background-color','white');
+                           $('#d').css('background-color','white');
+                           $('#e').css('background-color','white');
+                            $('#t1').hide();
+                           $('#t2').hide();
+                            $('#t3').show();
+                             $('#t4').hide();
+                            
+            		});
+            				$('#d').click(function(){
+                           $('#d').css('background-color','#E8E9EC');
+                           $('#b').css('background-color','white');
+                           $('#c').css('background-color','white');
+                           $('#a').css('background-color','white');
+                           $('#e').css('background-color','white');
+                              $('#t1').hide();
+                           $('#t2').hide();
+                            $('#t3').hide();
+                             $('#t4').show();
+            		});
+            					$('#e').click(function(){
+                           $('#e').css('background-color','#E8E9EC');
+                           $('#b').css('background-color','white');
+                           $('#c').css('background-color','white');
+                           $('#d').css('background-color','white');
+                           $('#a').css('background-color','white');
+                            
+            		});
+                    
+            	});
+            	            </script>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-10 bg-white">
+<table class="table table-bordered " id="t1">
+  <thead>
+    <tr>
+      <th scope="col">Type</th>
+      <th scope="col">Process Involved</th> 
+      <th scope="col">Nature of Data</th>
+      <th scope="col">Type of Data</th>
+      <th scope="col">Action</th>
+      <th scope="col">Person Responsible</th>
+      <th scope="col">Target Date</th>
+      <th scope="col">Other Parties Involved</th>  
+    </tr>
+
+  </thead>
+ 
+  <tbody>
+    <tr>
+      <td>Back-end</td>
+      <td>Back-end</td>
+      <td>
+        Back-End
+      </td>
+      <td>
+        <h5>Personal Data: </h5>
+          <h5>Special Category Data:  </h5>
+        </td>
+      <td>
+      <button type="button" class="btn btn-default" >Review</button>
+      </td>
+      <td><div class="form-group">
+        <div class="row">
+        <div class="col-md-12">
+            <select class="form-control" id="exampleSelectd">
+              <option></option>
+              <option>auditor</option>             
+            </select>
+    </div>
+        </div>
+        </div>
+      </td>
+      <td>
+
+      	<script >
+      		var d=new Date();
+      		var s=d.toLocaleDateString();
+      		document.write(s);
+      	</script>
+      </td>
+      <td>
+      	
+      	<div class="form-group">
+        <div class="row">
+        <div class="col-md-10">
+          
+            <select class="form-control" id="exampleSelectd">
+              <option></option>
+              <option>IT Dept</option>             
+            </select>
+    </div>
+        </div>
+        </div>
+      </td>
+    </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>  </td>
+      <td>
+       <button type="button" class="btn btn-default form-control" >Remove Purpose</button>
+      </td>
+      <td>   <button type="button" class="form-control">Join</button></td>
+      <td></td>
+      <td></td>
+    </tr>
+     <tr>
+      <td>Not Sure</td>
+      <td>Review of all Process</td>
+      <td></td>
+      <td>  </td>
+      <td>
+       <button type="button" class="form-control btn-default" id="ap">Add Purpose</button>
+       <input type="text" name="name" id="nam" class="form-control" style="margin-top: 12px;">
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $('#nam').hide();
+          $('#ap').click(function(){
+               $('#nam').toggle();
+         
+          });
+
+        })
+
+        
+      </script>
+      </td>
+      <td>
+        <button type="button" class="form-control">Join</button>
+      </td>
+      <td>
+
+        <script >
+          var d=new Date();
+          var s=d.toLocaleDateString();
+          document.write(s);
+        </script>
+      </td>
+      <td>
+        
+        <div class="form-group">
+        <div class="row">
+        <div class="col-md-10">
+          
+            <select class="form-control" id="exampleSelectd">
+              <option></option>
+              <option>IT Dept</option>             
+            </select>
+    </div>
+        </div>
+        </div>
+      </td>
+    </tr>
+      <tr>
+      <td>Purpose defined</td>
+      <td>Review of all process</td>
+      <td></td>
+      <td>  </td>
+      <td>
+           <button type="button" name="name" id="cp" class="form-control btn btn-default">Change Purpose</button>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+     <tr>
+      <td>Purpose defined</td>
+      <td>Review of all process</td>
+      <td></td>
+      <td>  </td>
+      <td>
+           <button type="button" name="name" id="cp" class="form-control btn btn-default">Status quo</button>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<table class="table table-bordered " id="t2">
+  <thead>
+    <tr>
+      <th scope="col">Retention Period</th>
+      <th scope="col">Process Involved</th> 
+      <th scope="col">Nature of Data</th>
+      <th scope="col">Type of Data</th>
+      <th scope="col">Action</th>
+      <th scope="col">Person Responsible</th>
+      <th scope="col">Target Date</th>
+        <th scope="col">Other Parties Involved</th>  
+
+  
+    </tr>
+
+  </thead>
+ 
+  <tbody>
+    <tr>
+      <td>Back-end</td>
+      <td></td>
+      <td></td>
+      <td>  </td>
+      <td>
+      	<button type="button" name="" class="form-control"> Review</button>
+      </td>
+      <td><div class="form-group">
+        <div class="row">
+        <div class="col-md-12">
+          
+            <select class="form-control" id="exampleSelectd">
+              <option></option>
+              <option>auditor</option>             
+            </select>
+    </div>
+        </div>
+        </div>
+      </td>
+      <td>
+
+      	<script >
+      		var d=new Date();
+      		var s=d.toLocaleDateString();
+      		document.write(s);
+      	</script>
+      </td>
+        <td></td>
+    </tr>
+      <tr>
+      <td>No Purpose or Usages</td>
+      <td>Review of all process</td>
+      <td></td>
+      <td>  </td>
+      <td>
+        <button type="button" class="form-control btn-default">Reduce</button>
+      </td>
+      <td></td>
+      <td></td>
+        <td></td>
+          
+     
+    </tr>
+    <tr>
+      <td>Back-end</td>
+      <td></td>
+      <td></td>
+      <td>  </td>
+      <td>
+        <button type="button" name="" class="form-control btn btn-default">Remove Retention</button>
+      </td>
+      <td><div class="form-group">
+        <div class="row">
+        <div class="col-md-12">
+          
+            <select class="form-control" id="exampleSelectd">
+              <option></option>
+              <option>auditor</option>             
+            </select>
+    </div>
+        </div>
+        </div>
+      </td>
+      <td>
+
+        <script >
+          var d=new Date();
+          var s=d.toLocaleDateString();
+          document.write(s);
+        </script>
+      </td>
+        <td></td>
+    </tr>
+      <tr>
+      <td>No Purpose or Usages</td>
+      <td>Review of all process</td>
+      <td></td>
+      <td>  </td>
+      <td>
+        <button type="button" class="form-control btn btn-default">Change Period</button>
+      </td>
+      <td></td>
+      <td></td>
+        <td></td>
+       
+     
+    </tr>
+   <tr>
+      <td>Back-end</td>
+      <td></td>
+      <td></td>
+      <td>  </td>
+      <td>
+        <button type="button" name="" class="form-control btn btn-default"> Status quo</button>
+      </td>
+      <td><div class="form-group">
+        <div class="row">
+        <div class="col-md-12">
+          
+            <select class="form-control" id="exampleSelectd">
+              <option></option>
+              <option>auditor</option>             
+            </select>
+    </div>
+        </div>
+        </div>
+      </td>
+      <td>
+
+        <script >
+          var d=new Date();
+          var s=d.toLocaleDateString();
+          document.write(s);
+        </script>
+      </td>
+        <td></td>
+    </tr>
+      
+
+  </tbody>
+</table>
+
+
+<table class="table table-bordered " id="t3">
+  <thead>
+    <tr>
+      <th scope="col">Access Control</th>
+      <th scope="col">Process Involved </th> 
+      <th scope="col">Nature of Data</th>
+      <th scope="col">Type of Data</th>
+      <th scope="col">Action</th>
+      <th scope="col">Person Responsible</th>
+      <th scope="col">Target Date</th>
+      <th scope="col">Other Parties Involved</th>
+  
+    </tr>
+
+  </thead>
+ 
+  <tbody>
+    <tr>
+      <td>
+        <button type="button" class="btn btn-success" id="np"> 5 User</button>
+        <ol>
+          <li>Jackson</li>
+           <li>Peter</li>
+            <li>Walker</li>
+             <li>Anthoni</li>
+
+        </ol>
+        <script>
+          $(document).ready(function(){
+            $('ol').hide();
+               $('#np').click(function(){
+               $('ol').toggle();
+
+               });
+          });
+        </script>
+      </td>
+      <td>Review of all</td>
+      <td></td>
+      <td>  </td>
+      <td>
+                <button type="button" class="btn btn-default form-control">Review</button>
+
+      </td>
+      <td>
+      </td>
+      <td>
+
+        <script >
+          var d=new Date();
+          var s=d.toLocaleDateString();
+          document.write(s);
+        </script>
+      </td>
+      <td></td>
+      
+    </tr>
+      <tr>
+      <td></td>
+      <td>Review of all process</td>
+      <td></td>
+      <td>  </td>
+      <td>
+        <button type="button" class="btn btn-default form-control">Reduce Access</button>
+      </td>
+      <td></td>
+      <td></td>
+        <td></td>
+     
+    </tr>
+    <tr>
+      <td></td>
+      <td>Review of all process</td>
+      <td></td>
+      <td>  </td>
+      <td>        <button type="button" class="btn btn-default form-control">RemoveAccess</button>
+</td>
+      <td></td>
+      <td></td>
+        <td></td>
+     
+    </tr>
+    <tr>
+      <td>No Purpose or Usages</td>
+      <td>Review of all process</td>
+      <td></td>
+      <td>  </td>
+      <td>       
+       <button type="button" class="btn btn-default form-control">Change Access</button>
+</td>
+      <td></td>
+      <td></td>
+        <td></td>
+     
+    </tr>
+    <tr>
+      <td>No Purpose or Usages</td>
+      <td>Review of all process</td>
+      <td></td>
+      <td>  </td>
+      <td>       <button type="button" class="btn btn-default form-control">Status quo</button>
+</td>
+      <td></td>
+      <td></td>
+        <td></td>
+     
+    </tr>
+   
+  </tbody>
+</table>
+<table class="table table-bordered " id="t4">
+  <thead>
+    <tr>
+      <th scope="col">Policy States</th>
+      <th scope="col">Process Involved</th> 
+      <th scope="col">Nature of Data</th>
+      <th scope="col">Type of Data</th>
+      <th scope="col">Action</th>
+      <th scope="col">Person Responsible</th>
+      <th scope="col">Target Date</th>
+      <th scope="col">Other Parties Involved</th>  
+    </tr>
+
+  </thead>
+ 
+  <tbody>
+    <tr>
+      <td>No Purpose or Usages</td>
+      <td>Review of all Process</td>
+      <td></td>
+      <td>  </td>
+      <td>
+      <button type="button" class="btn btn-default form-control">Review Policy </button>
+      </td>
+      <td>
+      </td>
+      <td>
+
+        <script >
+          var d=new Date();
+          var s=d.toLocaleDateString();
+          document.write(s);
+        </script>
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+      <tr>
+      <td>No Purpose or Usages</td>
+      <td>Review of all process</td>
+      <td></td>
+      <td>  </td>
+      <td>
+        
+         <button type="button" class="btn btn-default form-control" id="ap1">Add Policy</button>
+
+       <input type="text" name="name" id="name1" class="form-control" style="margin-top: 12px;" >
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('#name1').hide();
+   $('#ap1').click(function(){
+        $('#name1').toggle();
+   });
+      });
+
+   </script>
+
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+     <tr>
+      <td>Not Sure</td>
+      <td>Review of all Process</td>
+      <td></td>
+      <td>  </td>
+      <td>
+      <button type="button" class="btn-default form-control">Charge Policy</button>
+      </td>
+      <td>
+        <button type="button" class="btn btn-success">Join</button>
+      </td>
+      <td>
+
+        <script >
+          var d=new Date();
+          var s=d.toLocaleDateString();
+          document.write(s);
+        </script>
+      </td>
+      <td>
+        
+        <div class="form-group">
+        <div class="row">
+        <div class="col-md-10">
+          
+            <select class="form-control" id="exampleSelectd">
+              <option></option>
+              <option>IT Dept</option>             
+            </select>
+    </div>
+        </div>
+        </div>
+      </td>
+    </tr>
+     
+   
+    <tr>
+      <td>Purpose defined</td>
+      <td>Review of all process</td>
+      <td></td>
+      <td>  </td>
+      <td>
+      <button type="button" class="btn btn-default form-control">Status quo</button>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+    </tr>
+  </tbody>
+</table>
+
+</div>
+</div>
+<br>
+ 
+
+</div>
+</div> 
+<br>
+
+</body>
+</html>
